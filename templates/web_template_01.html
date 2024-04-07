@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Joshua Biamby's Portfolio Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="./static/assets/css/main.css" />
+		<link rel="shortcut icon" href="{{ url_for('static', filename='myIcon.ico') }}">
+		<noscript><link rel="stylesheet" href="./static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Navigation menu -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-power-off"><span>About Me</span></a>
+						<a href="#work" class="icon solid fa-wrench"><span>Work</span></a>
+						<a href="#contact" class="icon solid fa-tablet"><span>Contact</span></a>
+						<a href="https://www.linkedin.com/in/joshua-biamby-565159214/" class="icon brands fa-linkedin"><span>Linkedin</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Joshua Biamby</h1>
+									<p>Full-Stack Python Developer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="static/%20website%20images/IMG_3516%202.JPG" alt="Josh Front Face Pic" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+								<p>
+									My work is about harnessing the power of creativity and expertise to execute simple solutions.
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://github.com/earthGuyYellow/password_checker" class="image fit"><img src="static/%20website%20images/password_meme.jpg" alt=""></a>
+										</div>
+									</div>
+									<a href="#contact" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>Contact Me</span></span>
+									</a>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="/submit_form" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Joshua Biamby</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="./static/assets/js/jquery.min.js"></script>
+			<script src="./static/assets/js/browser.min.js"></script>
+			<script src="./static/assets/js/breakpoints.min.js"></script>
+			<script src="./static/assets/js/util.js"></script>
+			<script src="./static/assets/js/main.js"></script>
+
+	</body>
+</html>
